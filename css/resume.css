@@ -10,6 +10,10 @@ body {
   color: #868e96;
 }
 
+#main-content {
+  margin-top: calc(-50%);
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -26,7 +30,7 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #355f89;
 }
 
 h1 {
