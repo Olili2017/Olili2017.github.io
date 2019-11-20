@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  olili2017.github.io:
+    build:
+      context: ./usr/src/app
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:80
