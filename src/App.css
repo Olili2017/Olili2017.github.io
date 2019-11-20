@@ -1,22 +1,76 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-family: 'Roboto Mono',monospace;
 }
 
-.App-logo {
-  height: 40vmin;
+.icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon img {
+  width: 1.3em;
+  margin: .5em;
 }
 
-.App-link {
-  color: #09d3ac;
+.profile-image {
+  width: 100px;
+}
+
+.main-header {
+  background-color: #6d56c1;
+  color: aliceblue;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 3em;
+}
+
+p.developer-name {
+  font-size: 2.5em;
+  font-weight: 550;
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.developer-contact-key {
+  width: 100px;
+  opacity: .4;
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.developer-contact-value {
+  /* display: inline-block; */
+  word-wrap: unset;
+  padding-left: 60px;
+  margin-bottom: 15px;
+}
+
+.education-level {
+  box-shadow: 0px 0px 5px red;
+  margin: 1em;
+  padding: 1em;
+}
+
+.education-duration li {
+  display: inline-block;
+  padding: 0.25em;
+}
+
+.education-duration li:first-child {
+    color: red;
+}
+
+.education-duration li:last-child {
+  color: green;
 }
