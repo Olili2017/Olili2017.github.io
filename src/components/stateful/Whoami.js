@@ -34,7 +34,7 @@ class Whoami extends Component {
             <Container id="whoami">
                 <Row>
                     <Col>
-                        <h3>Hi_</h3>
+                        <h1>Hi_</h1>
                         <p>
                             I am Junior software developer able to build both Web and Mobile presence
                             from the ground up - from concept, navigation and programming

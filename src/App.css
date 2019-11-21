@@ -175,3 +175,64 @@ p.developer-name {
 .education-duration li:last-child {
   color: green;
 }
+
+.sub-title {
+  opacity: .5;
+  font-family: Roboto Mono,monospace;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* color: #999; */
+  margin-bottom: 40px;
+}
+
+/*************************************************
+ start large designed list css (schools and employment)
+ **************************************************/
+
+ .large-list-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+
+ .large-list-container:last-child {
+   /* padding-bottom: 10px; */
+   border-bottom: 2px solid #02203c;
+ }
+
+ .large-list-block {
+  border-left: 2px solid #02203c;
+  padding-left: 25px;
+  padding-bottom: 50px;
+ }
+
+ .large-list-block::before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #02203c;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #fff;
+  left: 10px;
+ }
+
+ .large-list-block-title {
+  text-transform: uppercase;
+  color: #02203c;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: Roboto Mono,monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+ }
+
+ .large-list-block-date {
+  font-family: Inconsolata,monospace;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999;
+  padding-bottom: 10px;
+ }
