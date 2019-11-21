@@ -7,6 +7,7 @@ import { Button,Image, Container, Row, Col } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faFace } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
+import Resume from './components/stateless/Resume';
 
 class App extends Component {
 
@@ -16,64 +17,10 @@ class App extends Component {
       <div className="App">
         <Landing />
         <Whoami />
+        <Resume />
         {/* <MainHeader /> */}
         {/* <Education /> */}
       </div>
-    );
-  }
-}
-
-class MainHeader extends Component {
-  render (){
-
-    const developerName = "Daniel Olili";
-    // const developerNameShort = "Daniel";
-
-    const contact = [
-      { key : "AGE", keyValue : "25" },
-      { key : "PHONE", keyValue : "256 77 264-91-19" },
-      { key : "EMAIL", keyValue : "olilidaniel48@gmail.com" },
-      { key : "ADDRESS", keyValue : "Kampala, Uganda" }
-    ];
-
-    const socialliks = [
-      { name : "Github", icon : "https://github.com/fluidicon.png", href : "https://github.com/Olili2017" },
-      { name : "LinkedIn", icon : "https://github.com/fluidicon.png", href : "https://github.com/Olili2017" },
-      { name : "Twitter", icon : "https://github.com/fluidicon.png", href : "https://github.com/Olili2017" },
-      { name : "Upwork", icon : "https://github.com/fluidicon.png", href : "https://github.com/Olili2017" }
-    ]
-    return (
-      <header className="main-header container-fluid">
-        <Container>
-        <Row>
-          <Col>
-            <Image xs={6} md={4} lg={4} className="profile-imag img-sm" src="https://previews.aspirity.com/spirit/assets/img/img_avatar.png" rounded />
-          </Col>
-          <Col>
-            <div>
-              <p className="developer-name" >{developerName}_</p>
-              <p>Full stack developer, Mobile developer</p>
-              <div>
-                {
-                  contact.map((item, key) => {
-                  return <p key={key}><big className="developer-contact-key">{item.key}</big><tt className="developer-contact-value">{item.keyValue}</tt></p>
-                  })
-                }
-
-              </div>
-              <div>
-                {
-                  socialliks.map((icon, key) => {
-                    return <i className="icon" ><a alt={icon.name} target="_blank" href={icon.href}><img alt={icon.name} title={icon.name} src={icon.icon}></img></a></i>
-                  })
-                }
-              </div>
-            </div>
-          </Col>
-          <Col><br /><b></b></Col>
-        </Row>
-      </Container>
-    </header>
     );
   }
 }
