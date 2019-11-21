@@ -1,0 +1,93 @@
+#whoami {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.text-color-primary {
+    color: #02203c;
+}
+
+.text-color-white {
+    color: #fff;
+}
+
+.btn-download {
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 0;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+    text-align: center;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    border: 2px solid #02203c;
+    border-radius: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #02203c;
+    overflow: hidden;
+    width: 190px;
+    height: 40px;
+}
+
+/* .btn-download:hover  */
+
+.btn-download-slide {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background-color: #02203c;
+    -webkit-transition: width .4s cubic-bezier(.34,.63,.29,.96);
+    transition: width .4s cubic-bezier(.34,.63,.29,.96);
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.btn-download:hover .btn-download-slide {
+    width: 190px;
+    /* background-color: red; */
+}
+
+.btn-download:hover {
+    color: #fff;
+}
+
+.btn-download-slide-content {
+    width: 190px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.fa-in-btn {
+    width: 30px;
+    margin-inline-end: 1em;
+}
+
+.btn-download-icon {
+    width: 30px;
+    margin: 0 15px 0 0;
+}
+/* .btn-download {
+    background-color: #6d56c1;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    min-width: 170px;
+    text-align: center;
+    display: inline-block;
+    color: #fff!important;
+    font-weight: 600;
+    overflow: hidden;
+} */

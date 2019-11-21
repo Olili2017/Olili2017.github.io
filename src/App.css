@@ -1,6 +1,7 @@
 .App {
   /* text-align: center; */
   font-family: 'Roboto Mono',monospace;
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
 }
 
 .invisible {
@@ -36,7 +37,7 @@ a {
   color: #fff!important;
   font-size: 14px;
   text-decoration: none!important;
-  font-family: Open Sans,Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans',Helvetica,Arial,sans-serif;
   background-color: transparent;
   cursor: pointer;
 }
@@ -129,6 +130,7 @@ nav div a:hover::after {
   padding: 3em;
   background-image: linear-gradient(122deg,rgba(245,33,33,0) 82%,hsla(0,0%,100%,.08) 0),linear-gradient(108deg,rgba(27,0,255,0) 80%,hsla(0,0%,100%,.08) 0),linear-gradient(101deg,rgba(255,33,33,0) 79%,hsla(0,0%,100%,.08) 0),radial-gradient(circle,#02203c 0,#02203c 100%);
   /* background-image: linear-gradient(-122deg,rgba(245,33,33,0) 82%,hsla(0,0%,100%,.08) 0),linear-gradient(-108deg,rgba(27,0,255,0) 80%,hsla(0,0%,100%,.08) 0),linear-gradient(-101deg,rgba(255,33,33,0) 79%,hsla(0,0%,100%,.08) 0),radial-gradient(circle,#02203c 0,#02203c 100%); */
+  font-family: 'Roboto Mono',monospace;
 }
 
 p.developer-name {

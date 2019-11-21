@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Landing from './components/stateless/Landing'
+import Landing from './components/stateless/Landing';
+import Whoami from './components/stateful/Whoami';
 // import { Popover } from '@material-ui/core';
 // import profile from './profile.jpg';
 import { Button,Image, Container, Row, Col } from 'react-bootstrap';
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Landing />
+        <Whoami />
         {/* <MainHeader /> */}
         {/* <Education /> */}
       </div>

@@ -5,7 +5,6 @@ import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-ic
 import profile from '../../profile.jpg';
 import Topmenu from '../stateful/Topmenu';
 
-
 function Landing (props){
 
     const developerName = "Daniel Olili";
