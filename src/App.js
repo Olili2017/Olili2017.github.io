@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
+import Landing from './components/stateless/Landing'
 // import { Popover } from '@material-ui/core';
 // import profile from './profile.jpg';
 import { Button,Image, Container, Row, Col } from 'react-bootstrap';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFace } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
 class App extends Component {
@@ -10,8 +13,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <MainHeader />
-        <Education />
+        <Landing />
+        {/* <MainHeader /> */}
+        {/* <Education /> */}
       </div>
     );
   }
@@ -21,7 +25,7 @@ class MainHeader extends Component {
   render (){
 
     const developerName = "Daniel Olili";
-    const developerNameShort = "Daniel";
+    // const developerNameShort = "Daniel";
 
     const contact = [
       { key : "AGE", keyValue : "25" },
@@ -106,7 +110,7 @@ class Education extends Component {
       return levels;
     }
     return (
-      <div>
+      <div id="education">
         <h3>Education background</h3>
         {getEductationBackground(schools)}
       </div>
