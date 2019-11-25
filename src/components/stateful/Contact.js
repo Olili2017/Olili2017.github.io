@@ -70,7 +70,7 @@ class Contact extends Component {
                             <p>Or just write me a letter here_</p>
                         </Row>
                         <Container>
-                            <Form onSubmit={this.handleSubmit} data-netlify="true">
+                            <Form onSubmit={this.handleSubmit} netlify >
                                 <Form.Group controlId="name">
                                     {/* <Form.Label>Your name</Form.Label> */}
                                     <Form.Control name="name" value={name} type="text" placeholder="Your name" onChange={this.handleFormInputChange} />
