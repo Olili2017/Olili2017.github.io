@@ -2,10 +2,43 @@ import React, { Component } from 'react'
 import {Container, Col, Row, Form, Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 class Contact extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            name : null,
+            email : null,
+            message : null
+        }
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event){
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+          })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+          event.preventDefault();
+    }
+
+    handleFormInputChange = e => this.setState({ [e.target.name]: e.target.value });
+
     render (){
         const contact = this.props.contact;
         const socialliks = this.props.socialliks;
+
+        const { name, email, message } = this.state;
 
         return (
             <section id="contact" className="main-header" style={{marginBottom : '0px', paddingBottom : '0px'}}>
@@ -37,24 +70,24 @@ class Contact extends Component {
                             <p>Or just write me a letter here_</p>
                         </Row>
                         <Container>
-                            <Form name="contac-form" method="POST" data-netlify="true">
+                            <Form onSubmit={this.handleSubmit}>
                                 <Form.Group controlId="name">
                                     {/* <Form.Label>Your name</Form.Label> */}
-                                    <Form.Control name="name" type="text" placeholder="Your name" />
+                                    <Form.Control name="name" value={name} type="text" placeholder="Your name" onChange={this.handleFormInputChange} />
                                     {/* <Form.Text className="text-muted">
                                     I'll never share your email with anyone else.
                                     </Form.Text> */}
                                 </Form.Group>
                                 <Form.Group controlId="email">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control name="email" type="email" placeholder="Enter email" />
+                                    <Form.Control value={email} name="email" type="email" placeholder="Enter email" onChange={this.handleFormInputChange} />
                                     <Form.Text className="text-muted">
                                     I'll never share your email with anyone else.
                                     </Form.Text>
                                 </Form.Group>
                                 <Form.Group controlId="message">
                                     {/* <Form.Label>Password</Form.Label> */}
-                                    <Form.Control name="message" as="textarea" rows="5" placeholder="Type your message here" />
+                                    <Form.Control value={message} name="message" as="textarea" rows="5" placeholder="Type your message here" onChange={this.handleFormInputChange} />
                                 </Form.Group>
                                 <Form.Group>
                                     <div data-netlify-recaptcha="true"></div>
