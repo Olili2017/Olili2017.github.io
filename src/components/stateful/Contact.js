@@ -37,7 +37,7 @@ class Contact extends Component {
                             <p>Or just write me a letter here_</p>
                         </Row>
                         <Container>
-                            <Form action="POST" data-netlify="true">
+                            <Form name="contac-form" method="POST" data-netlify="true">
                                 <Form.Group controlId="name">
                                     {/* <Form.Label>Your name</Form.Label> */}
                                     <Form.Control name="name" type="text" placeholder="Your name" />
@@ -57,7 +57,7 @@ class Contact extends Component {
                                     <Form.Control name="message" as="textarea" rows="5" placeholder="Type your message here" />
                                 </Form.Group>
                                 <Form.Group>
-                                    <div data-netlify-recapture="true"></div>
+                                    <div data-netlify-recaptcha="true"></div>
                                 </Form.Group>
                                 <Button className="btn-submit" variant="primary" type="submit">
                                     Send
