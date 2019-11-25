@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button,Image, Container, Row, Col } from 'react-bootstrap';
+import { Image, Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import profile from '../../profile.jpg';

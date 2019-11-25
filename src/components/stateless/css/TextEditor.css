@@ -1,0 +1,78 @@
+.code-editor {
+    position: relative;
+    width: 700px;
+    height: 250px;
+    background-color: #011528;
+    box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    text-align: center;
+    font-display: monospace;
+    margin: 0px auto;
+}
+
+.code-editor > ul {
+    left: 12px;
+    position: absolute;
+    top: 4px;
+    list-style: none;
+    cursor: text;
+}
+
+.code-editor-sidebar {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    background-color: rgba(50,50,93,.1);
+}
+
+.code-editor-sidebar > ul > li {
+    text-decoration: none;
+    list-style: none;
+    color: blanchedalmond;
+    display: block;
+}
+
+.code-editor-sidebar ul {
+    /* margin: 0px; */
+    padding-left: 0px;
+}
+
+.code-editor > ul > li {
+    font-family: 'Source Code Pro',Helvetica,Arial,sans-serif;
+    font-family: 'Roboto Mono',monospace;
+    font-size: 14px;
+    text-align: left;
+    /* font-weight: 600; */
+    list-style: none;
+}
+
+/**************************
+ start types
+ *************************/
+
+ .type {
+     color: blueviolet;
+ }
+
+ .variable {
+     color: #fd971f;
+ }
+
+ .variable-call {
+     color: #9effff;
+ }
+
+ .class {
+     color: #a0a528;
+ }
+
+ .value {
+     color: #ae81ff;
+ }
+
+ .equals {
+    color: antiquewhite;
+ }
+
+ .reference, .reference a {
+     color: #a6e22e;
+ }

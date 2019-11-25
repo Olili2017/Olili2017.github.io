@@ -43,10 +43,6 @@ class Education extends Component {
         }
       ];
 
-      /**
-       * Gets my school background from array and recreates it to render as HTML
-       * @param {Array} schools
-       */
       const getEductationBackground = (schools) => {
         let levels;
 
@@ -70,7 +66,6 @@ class Education extends Component {
   class EducationLevel extends Component {
 
     render (){
-      // console.log(this.props);
 
       const level = {
         name : this.props.school.name,
@@ -120,10 +115,6 @@ class Employment extends Component {
         }
       ];
 
-      /**
-       * Gets my employment background from array and recreates it to render as HTML
-       * @param {Array} companies
-       */
       const getEmploymentBackground = (companies) => {
         let firms;
 
@@ -147,7 +138,6 @@ class Employment extends Component {
   class Employmentcomponay extends Component {
 
     render (){
-      // console.log(this.props);
 
       const firm = {
         name : this.props.company.name,
@@ -170,22 +160,5 @@ class Employment extends Component {
       )
     }
   }
-
-  class Year extends Component {
-    constructor (props){
-      super(props);
-      this.toggleDetailsTooltip = this.toggleDetailsTooltip.bind(this);
-    }
-
-    toggleDetailsTooltip (event){
-      //@TODO: toggle tooltip to show courses attempted
-      console.log("mouse is over -- " + event.target.innerText + " course units are : " + this.props.courseUnits !== null && this.props.courseUnits !== undefined ? this.props.courseUnits.units : null);
-    }
-
-    render (){
-    return (<li onMouseOver={this.toggleDetailsTooltip} key={this.props.year}><button className="btn btn-sm btn-primary" >{this.props.year}</button></li>);
-    }
-  }
-
 
 export default Resume;

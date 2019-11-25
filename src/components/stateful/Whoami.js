@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Container, Col, Button } from 'react-bootstrap'
+import { Row, Container, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faUserNinja } from '@fortawesome/free-solid-svg-icons';
 import { HoopSpinner } from "react-spinners-kit";

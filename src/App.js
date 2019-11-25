@@ -6,6 +6,7 @@ import Whoami from './components/stateful/Whoami';
 import './App.css';
 import Resume from './components/stateless/Resume';
 import Contact from './components/stateful/Contact'
+import Tools from './components/stateless/Tools';
 
 class App extends Component {
 
@@ -33,6 +34,7 @@ class App extends Component {
         <Landing developerName={developerName} developerNameShort={developerNameShort} contact={contact} socialliks={socialliks} />
         <Whoami />
         <Resume />
+        <Tools />
         <Contact developerName={developerName} contact={contact} socialliks={socialliks} />
         {/* <Education /> */}
       </div>
