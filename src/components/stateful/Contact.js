@@ -38,26 +38,26 @@ class Contact extends Component {
                         </Row>
                         <Container>
                             <Form action="POST" data-netlify="true">
-                                <Form.Group controlId="formName">
+                                <Form.Group controlId="name">
                                     {/* <Form.Label>Your name</Form.Label> */}
                                     <Form.Control name="name" type="text" placeholder="Your name" />
                                     {/* <Form.Text className="text-muted">
                                     I'll never share your email with anyone else.
                                     </Form.Text> */}
                                 </Form.Group>
-                                <Form.Group controlId="formEmail">
+                                <Form.Group controlId="email">
                                     <Form.Label>Email address</Form.Label>
                                     <Form.Control name="email" type="email" placeholder="Enter email" />
                                     <Form.Text className="text-muted">
                                     I'll never share your email with anyone else.
                                     </Form.Text>
                                 </Form.Group>
-                                <Form.Group controlId="formMessage">
+                                <Form.Group controlId="message">
                                     {/* <Form.Label>Password</Form.Label> */}
                                     <Form.Control name="message" as="textarea" rows="5" placeholder="Type your message here" />
                                 </Form.Group>
-                                <Form.Group data-netlify-recapture="true" >
-
+                                <Form.Group>
+                                    <div data-netlify-recapture="true"></div>
                                 </Form.Group>
                                 <Button className="btn-submit" variant="primary" type="submit">
                                     Send

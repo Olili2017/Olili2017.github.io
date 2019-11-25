@@ -11,7 +11,6 @@ class App extends Component {
 
   render (){
 
-
     const developerName = "Daniel Olili";
     const developerNameShort = "Daniel";
 
