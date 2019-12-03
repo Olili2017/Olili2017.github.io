@@ -2,20 +2,37 @@ import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
+import './css/overlaymenu.css'
+
 class Topmenu extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            itemSelected : 0
+            itemSelected : 0,
+            isScrolled : false
         }
-        // this.isNewSelected = this.isNewSelected.bind(this);
+        this.handleScroll = this.handleScroll.bind(this)
     }
 
-    // isNewSelected(event){
-    //     console.log("section is -- " + event.target.value);
+    handleScroll (event){
+        let top = window.scrollY
 
-    // }
+        if (top > 50){
+            this.setState({isScrolled : true})
+        } else {
+            this.setState({isScrolled : false})
+        }
+    }
+
+    componentDidMount(){
+        window.addEventListener('scroll',this.handleScroll)
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+
 
     render (){
 
@@ -28,20 +45,42 @@ class Topmenu extends Component {
             { display : "Contact me", href : "contact", selection : 5}
         ]
 
-        return (
-        <Row >
-            <nav className="d-none d-md-none d-lg-block">
-                {
-                    items.map((item, key) => {
-                    return <div key={key}><Link onClick={
-                        () => {
-                            this.setState({itemSelected : item.selection});
+        return (<div>
+            {
+            !this.state.isScrolled ?
+            (
+                <Row className="menu">
+                    <nav className="d-none d-md-none d-lg-block">
+                        {
+                            items.map((item, key) => {
+                            return <div key={key}><Link onClick={
+                                () => {
+                                    this.setState({itemSelected : item.selection});
+                                }
+                            } activeClass="active" spy={true} smooth={true} offset={-70} duration={1000} activeClassName="selected" to={item.href} className={this.state.itemSelected === item.selection ? "selected" : "notselected"} >{item.display}</Link></div>
+                            })
                         }
-                    } activeClass="active" spy={true} smooth={true} offset={-70} duration={1000} activeClassName="selected" to={item.href} className={this.state.itemSelected === item.selection ? "selected" : "notselected"} >{item.display}</Link></div>
-                    })
-                }
-            </nav>
-        </Row>);
+                    </nav>
+                </Row>
+            ) : (
+                <Row className="menu overlay-menu" >
+                    <nav className="d-none d-md-none d-lg-block" >
+                        {
+                            items.map((item, key) => {
+                            return <div key={key}><Link onClick={
+                                () => {
+                                    this.setState({itemSelected : item.selection});
+                                }
+                            } activeClass="active" spy={true} smooth={true} offset={-70} duration={1000} activeClassName="selected" to={item.href} className={this.state.itemSelected === item.selection ? "selected" : "notselected"} >{item.display}</Link></div>
+                            })
+                        }
+                    </nav>
+                </Row>
+            )
+            }
+        </div>
+
+        );
     }
 }
 

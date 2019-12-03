@@ -1,0 +1,15 @@
+.menu {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.overlay-menu {
+    width : 110%;
+    height: 70px;
+    background-color: #02203c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    border-bottom: 2px solid rgba(255,255,255,.3);
+}

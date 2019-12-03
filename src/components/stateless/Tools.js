@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faGithub, faGit, faJenkins, faNpm, faNode, faAndroid, faJava, faPhp, faJs, faReact, faPython, faLinux, faLinode} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faGit, faJenkins, faNpm, faNode, faAndroid, faJava, faPhp, faJs, faReact, faPython, faUbuntu, faDocker} from '@fortawesome/free-brands-svg-icons'
 
 import './css/TextEditor.css'
 function Tools (){
@@ -13,8 +13,8 @@ function Tools (){
         { name : "nodejs", icon : faNode},
         { name : "npm", icon : faNpm},
         { name : "android", icon : faAndroid},
-        { name : "linux", icon : faLinux},
-        { name : "linode", icon : faLinode},
+        { name : "linux", icon : faUbuntu},
+        { name : "docker", icon : faDocker},
         { name : "reactjs", icon : faReact},
         { name : "java", icon : faJava},
         { name : "php", icon : faPhp},
