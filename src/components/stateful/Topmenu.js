@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {faArrowAltCircleUp} from '@fortawesome/free-solid-svg-icons'
 
 import './css/overlaymenu.css'
 
@@ -45,7 +47,7 @@ class Topmenu extends Component {
             { display : "Contact me", href : "contact", selection : 5}
         ]
 
-        return (<div>
+        return (<div id="top">
             {
             !this.state.isScrolled ?
             (
@@ -75,6 +77,11 @@ class Topmenu extends Component {
                             })
                         }
                     </nav>
+                    <div className="btn-back-top" >
+                        <Link activeClass="active" spy={true} smooth={true} offset={0} duration={1000} activeClassName="selected" to="top">
+                            <FontAwesomeIcon icon={faArrowAltCircleUp} style={{ width: '100%', height: '100%'}}/>
+                        </Link>
+                        </div>
                 </Row>
             )
             }

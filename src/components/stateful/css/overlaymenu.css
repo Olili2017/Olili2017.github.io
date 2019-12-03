@@ -13,3 +13,14 @@
     z-index: 99;
     border-bottom: 2px solid rgba(255,255,255,.3);
 }
+
+.btn-back-top {
+    height: 40px;
+    width: 40px;
+    background-color: #02203c;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 20px;
+    color: white;
+}
