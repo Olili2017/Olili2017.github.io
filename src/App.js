@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { faTwitter, faGithub, faLinkedin, faStackoverflow } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter, faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons"
 import Landing from './components/stateless/Landing';
 import Whoami from './components/stateful/Whoami';
 // import { Button,Image, Container, Row, Col } from 'react-bootstrap';
@@ -30,7 +30,7 @@ class App extends Component {
       { name : "Github", icon : faGithub, href : "https://github.com/Olili2017" },
       { name : "LinkedIn", icon : faLinkedin, href : "https://www.linkedin.com/in/daniel-olili-93029b111/" },
       { name : "Twitter", icon : faTwitter, href : "https://twitter.com/olilidaniel" },
-      { name : "Stack-overflow", icon : faStackoverflow, href : "https://stackoverflow.com/users/9476848/piper2?tab=profile" }
+      { name : "StackOverflow", icon : faStackOverflow, href : "https://stackoverflow.com/users/9476848/piper2?tab=profile" }
     ]
 
     return (
