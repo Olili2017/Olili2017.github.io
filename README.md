@@ -1,13 +1,13 @@
 # OLILI DANIEL - My portfolio site
 
+[CLICK HERE TO VISIT SITE](http://olili.netlify.com)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f48f239c-1c15-4ed7-81ba-94d9efe6e3bc/deploy-status)](https://app.netlify.com/sites/olili/deploys)&nbsp;&nbsp;&nbsp;
 [![Coverage Status](https://coveralls.io/repos/github/olili27/olili27.github.io/badge.svg?branch=master)](https://coveralls.io/github/olili27/olili27.github.io?branch=master)
 
 ![Project Image](./public/project-screenshot.png)
 
 > This is my personal profile built in ReactJS.
-
-[VIEW DEPLOYMENT](http://olili.netlify.com)
 
 ---
 
