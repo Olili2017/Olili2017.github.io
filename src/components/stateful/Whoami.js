@@ -36,7 +36,7 @@ class Whoami extends Component {
                     <Col>
                         <h1>Hi_</h1>
                         <p>
-                            I am Junior software developer able to build both Web and Mobile presence
+                            I am software developer able to build both Web and Mobile presence
                             from the ground up - from concept, navigation and programming
                             (front-end/backend), testing, deploying to maintenance.
                             Skilled at writing well-designed, testable and efficient code using
@@ -58,7 +58,7 @@ class Whoami extends Component {
                             <FontAwesomeIcon className="fa-in-btn" icon={faDownload} />
                             <span className="in-btn-text" >Download CV</span>
                         </div>
-                        {this.state.downloadFailed ? <span style={{color : 'red'}}>&nbsp;&nbsp;&nbsp;Looks like the file server is still having a time of it's own. Please try in a few moments ... <FontAwesomeIcon icon={faUserNinja}/></span> : <span></span>}
+                        {this.state.downloadFailed ? <span style={{color : 'red'}}>&nbsp;&nbsp;&nbsp;File server not reachable. Please try in a few moments ... <FontAwesomeIcon icon={faUserNinja}/></span> : <span></span>}
                         <HoopSpinner
                             size={30}
                             color="#686769"
